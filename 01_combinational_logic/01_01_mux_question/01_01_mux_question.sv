@@ -24,6 +24,12 @@ module mux_4_1
   output [3:0] y
 );
 
+  assign y = (sel == 2'b11) ? d3 : 
+             (sel == 2'b10) ? d2 :
+             (sel == 2'b01) ? d1 :
+             (sel == 2'b00) ? d0 ;
+
+  
   // Task:
   // Using code for mux_2_1 as an example,
   // write code for 4:1 mux using "?:" operator
