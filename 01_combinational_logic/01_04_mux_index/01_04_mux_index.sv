@@ -31,10 +31,10 @@ module mux_4_1
 
   logic [3:0] d [0:3];
 
-  assign d [0] = d0;
-  assign d [1] = d1;
-  assign d [2] = d0;
-  assign d [3] = d1;
+  assign d [2'b00] = d0;
+  assign d [2'b01] = d1;
+  assign d [2'b10] = d0;
+  assign d [2'b11] = d1;
   
   assign y = d [sel];
   
