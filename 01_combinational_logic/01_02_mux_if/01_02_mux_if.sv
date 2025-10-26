@@ -32,7 +32,7 @@ module mux_4_1
       if (sel == 2'b11)
       y = d3;
   else if (sel == 2'b10)
-      y = d0;
+      y = d2;
   else if (sel == 2'b01)
    y = d1;
   else 
