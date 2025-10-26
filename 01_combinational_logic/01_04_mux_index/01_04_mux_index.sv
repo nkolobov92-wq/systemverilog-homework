@@ -33,8 +33,8 @@ module mux_4_1
 
   assign d [0] = d0;
   assign d [1] = d1;
-  assign d [2] = d0;
-  assign d [3] = d1;
+  assign d [2] = d2;
+  assign d [3] = d3;
   
   assign y = d [sel];
   
